@@ -1,0 +1,22 @@
+ul li {
+    list-style: none;
+}
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(25, 90, 5);
+}
+
+.card {
+    background-color: rgb(25, 90, 5);
+    border-radius: 10px;
+}
+
+.card__title {
+   color: rgb(211, 236, 67);
+}
+.card__menu {
+    text-align: center;
+    color: aliceblue;
+    
+}

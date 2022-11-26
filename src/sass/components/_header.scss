@@ -1,14 +1,39 @@
-.header{
+$color: red;
+@mixin button ($width, $height, $bg) {
+    width: $width;
+    height: $height;
+    background-color: $bg;
+}
+
+.header {
     background-color: rgb(24, 134, 14);
-    color: rgb(243, 141, 141);
-    font-weight: 700;
-    text-align: center;
-    &__logo {
-       
+    &__title {
+        color: antiquewhite;
     }
     &__menu {
-        &-item {
-            
+        ul{ 
+            margin: 0;
+            padding: 0;
+            &:last-child {
+                a{
+                    @include button(30px, 10px, blue )
+                }
+            }
+            li{ list-style: none;
+                a{
+                    &.yellow{
+                        @include button(14px, 10px, yellow)
+                    }
+                    text-decoration: none;
+                    color: $color;
+                    &:hover {
+                        color: aqua;
+                    }
+                   
+                }
+            }
         }
     }
-}
+       
+   }
+
